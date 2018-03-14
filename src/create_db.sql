@@ -7,7 +7,7 @@ create table GAME(
 
 create table PLAYER(
 	player_id integer primary key,
-	name text not null;
+	name text not null);
 
 create table COLLECTION(
 	player_id integer not null,

@@ -54,6 +54,11 @@ def pickle_game_to_db(game_pickle_file, db_name):
 		data = pickle.Unpickler(f)
 		game = data.load()
 		bgg_db.insert_game(game, db_name)
+		game_id = bgg_db.select_from_game_name(game.name, db_name)[0]
+		#import pdb; pdb.set_trace()
+		for i in range(1, 11):
+			for player_name in game.votes[i]:
+				bgg_db.insert_rating(player_name, game_id, i, db_name)
 
 def main():
 #game_id = 206859 #Iberian rails
@@ -61,8 +66,8 @@ def main():
 #game_id = 164265 #Witness
 	db_name = 'bgg.db'
 	bgg_db.check_db(db_name)
-	game_pickle_file = get_game_info_inc_ratings(164265)
-	#game_pickle_file = 'game_164265.dat'
+	#game_pickle_file = get_game_info_inc_ratings(164265)
+	game_pickle_file = 'game_164265.dat'
 	pickle_game_to_db(game_pickle_file, db_name)
 
 if __name__ == '__main__':

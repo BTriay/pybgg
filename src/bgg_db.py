@@ -22,7 +22,6 @@ def check_db(db_name):
 		conn.commit()
 		conn.close()
 
-
 # *************************** player-related queries ***************************
 def select_player_name(player_id, db_name):
 	conn = sqlite3.connect(db_name)
@@ -45,16 +44,18 @@ def select_player_id(player_name, db_name):
 		return row[0]
 
 def insert_player(player_name, db_name):
+	logging.info('Inserting the player %s', player_name)
 	player_id = select_player_id(player_name, db_name)
 	if player_id==0:
 		conn = sqlite3.connect(db_name)
 		cur = conn.cursor()
 		cur.execute('insert into player (name) values (?)', (player_name,))
+		conn.commit()
 		conn.close()
-
+	return select_player_id(player_name, db_name)
 
 # *************************** game-related queries ***************************
-def select_game(game_name, db_name):
+def select_from_game_name(game_name, db_name):
 	conn = sqlite3.connect(db_name)
 	cur = conn.cursor()
 	cur.execute('select * from game where name = ?', (game_name,))
@@ -62,7 +63,7 @@ def select_game(game_name, db_name):
 	conn.close()
 	return row
 
-def select_game_id(bgg_game_id, db_name):
+def select_from_bgg_game_id(bgg_game_id, db_name):
 	conn = sqlite3.connect(db_name)
 	cur = conn.cursor()
 	cur.execute('select * from game where bgg_game_id = ?', (bgg_game_id,))
@@ -71,15 +72,26 @@ def select_game_id(bgg_game_id, db_name):
 	return row
 
 def insert_game(game, db_name):
-	name_count = select_game(game.name, db_name)
-	id_count = select_game_id(game.bgg_game_id, db_name)
+	name_count = select_from_game_name(game.name, db_name)
+	id_count = select_from_bgg_game_id(game.bgg_game_id, db_name)
 	if (name_count!=None) | (id_count!=None):
 		logging.info('Game %s or game_id %s already in the DB', game.name, game.bgg_game_id)
 		return
 
 	conn = sqlite3.connect(db_name)
 	cur = conn.cursor()
-	logging.info('Inserting the game %s in the DB', game.name)
+	logging.info('Inserting the game %s', game.name)
 	cur.execute('insert into game (bgg_game_id, name) values (?,?)', (game.bgg_game_id, game.name))
 	conn.commit()
 	conn.close()
+
+# *************************** collection-related queries ***************************
+def insert_rating(player_name, game_id, rating, db_name):
+	logging.info('Inserting rating %s from %s for the game_id "%s"', rating, player_name, game_id)
+	player_id = insert_player(player_name, db_name)
+	conn = sqlite3.connect(db_name)
+	cur = conn.cursor()
+	cur.execute('insert into collection (player_id, game_id, rating) values (?, ?, ?)', (player_id, game_id, rating))
+	conn.commit()
+	conn.close()
+
