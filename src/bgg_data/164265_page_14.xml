@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?><items termsofuse="https://boardgamegeek.com/xmlapi/termsofuse"><item type="boardgame" id="164265">
+         <thumbnail>https://cf.geekdo-images.com/thumb/img/iRUrzTN-wv9v2p1U0ss9Ru2GX54=/fit-in/200x150/pic2336025.jpg</thumbnail>
+      <image>https://cf.geekdo-images.com/original/img/SYDPwTN1Qriv3pWhi5x0VZ5q4lg=/0x0/pic2336025.jpg</image>
+                                     				
+				<name type="primary" sortindex="1" value="Witness" />
+			
+						                           
+						               													<description>Witness is set in the world of Blake and Mortimer, a Belgian comic series started in the 1940s by writer/artist Edgar P. Jacobs. In the game, which is playable strictly by four players, you each represent one of four characters and your goal is to solve mysteries or crimes by sharing information with one another &amp;mdash; but you are quite restricted in how you can share information!&amp;#10;&amp;#10;Witness includes 64 cases for you to solve, and each case starts with an explanatory scene or image or both that someone reads or shows to the group. Each player then looks in his personal casebook to find information available only to his character. Players randomly decide who shares information first and in which direction, e.g., player A might whisper information to player B while player C talks to player D. Next, B will share both his information and A's information to C while D talks to A.&amp;#10;&amp;#10;After two more rounds of the most inefficient crime-solving system ever created, players read the conclusion of the case, which might offer additional information or another visual, then they each individually answer three questions about the case, with the group scoring one point for each correct answer for a final score ranging from 0 to 12.&amp;#10;&amp;#10;</description>
+										      	               				<yearpublished value="2014" />
+						               				<minplayers value="4" />
+						               				<maxplayers value="4" />
+						      			<poll name="suggested_numplayers" title="User Suggested Number of Players" totalvotes="21">
+			
+		<results numplayers="1">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="21" />
+				</results>					
+			
+		<results numplayers="2">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="21" />
+				</results>					
+			
+		<results numplayers="3">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="21" />
+				</results>					
+			
+		<results numplayers="4">		
+					<result value="Best" numvotes="21" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="0" />
+				</results>					
+			
+		<results numplayers="4+">		
+					<result value="Best" numvotes="0" />
+					<result value="Recommended" numvotes="0" />
+					<result value="Not Recommended" numvotes="19" />
+				</results>					
+	</poll> 
+			               				<playingtime value="15" />
+						               				<minplaytime value="15" />
+						               				<maxplaytime value="15" />
+						               				<minage value="13" />
+						      			<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="7">
+			<results>		
+					<result value="2" numvotes="0" />
+					<result value="3" numvotes="0" />
+					<result value="4" numvotes="0" />
+					<result value="5" numvotes="0" />
+					<result value="6" numvotes="0" />
+					<result value="8" numvotes="0" />
+					<result value="10" numvotes="1" />
+					<result value="12" numvotes="6" />
+					<result value="14" numvotes="0" />
+					<result value="16" numvotes="0" />
+					<result value="18" numvotes="0" />
+					<result value="21 and up" numvotes="0" />
+				</results>					
+	</poll> 
+			      			<poll name="language_dependence" title="Language Dependence" totalvotes="15">
+			
+		<results>		
+					<result level="1" value="No necessary in-game text" numvotes="0" />
+					<result level="2" value="Some necessary text - easily memorized or small crib sheet" numvotes="0" />
+					<result level="3" value="Moderate in-game text - needs crib sheet or paste ups" numvotes="0" />
+					<result level="4" value="Extensive use of text - massive conversion needed to be playable" numvotes="4" />
+					<result level="5" value="Unplayable in another language" numvotes="11" />
+				</results>					
+	</poll> 
+			      			 
+			      				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1116" value="Comic Book / Strip" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1039" value="Deduction" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1045" value="Memory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamecategory" id="1040" value="Murder/Mystery" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2023" value="Co-operative Play" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2047" value="Memory" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamemechanic" id="2027" value="Storytelling" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgamefamily" id="187" value="Ystari originals" />
+		
+									
+			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      			
+
+			      	      	      				
+		 			
+
+			
+		
+					<link type="boardgamedesigner" id="6776" value="Dominique Bodin" />
+		
+									
+			
+
+			      				
+		 			
+
+			
+		
+					<link type="boardgameartist" id="57223" value="Edgar P. Jacobs" />
+		
+									
+			
+
+			      	      				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="157" value="Asmodee" />
+		
+									
+				
+		 			
+
+			
+		
+					<link type="boardgamepublisher" id="2861" value="Ystari Games" />
+		
+									
+			
+
+			
+	
+
+	
+
+	
+		<comments page="14" totalitems="1805">
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									<comment username="Bookywankenobi" rating="7" value="" />
+									<comment username="zhiwiller" rating="7" value="" />
+									<comment username="skudfisher" rating="7" value="We laughed a lot and it&#039;s very original. Super short and somewhat memory intensive (which is the whole point of the game). I quickly realized how terrible my short-term memory is." />
+									<comment username="mtgofiend" rating="7" value="Quite a bit of fun, and it&#039;s nice that it is very short.  Only real knock against it is that you need exactly 4 players." />
+									<comment username="jjrbedford" rating="7" value="" />
+									<comment username="dourdou" rating="7" value="" />
+									<comment username="JulieRivNor" rating="7" value="" />
+									<comment username="kounotori" rating="7" value="" />
+									<comment username="UltraLord" rating="7" value="" />
+									<comment username="mastadont" rating="7" value="" />
+									<comment username="lscrock" rating="7" value="" />
+									<comment username="Demosthenes000" rating="7" value="" />
+									<comment username="Thelegitsandman" rating="7" value="" />
+									<comment username="Arkeo" rating="7" value="" />
+									<comment username="butze" rating="7" value="" />
+									<comment username="soccastar001" rating="7" value="This is an interesting and quick cooperative deduction game.  It always feels like a very cerebral party game.
+
+The game is played by exactly four players.  Each player takes the role of a character from the Belgian comic series Blake and Mortimer (of which I&#039;m not familiar).  At the start of the game you read the details of a case (which have 4 different difficulty levels) aloud and each player to themselves reads their own clues.  Then the game lasts four rounds where players will take turns whispering their clues to other players as well as any clues they heard previously for each round after the first.  So the game is cooperative mystery solving with a splash of &quot;telephone&quot;.  After those four rounds 3 questions are asked dealing with the case and the solution is read to see how many each player got right.
+
+Some of the clues are long, complex, or require you to actually describe a picture so it is harder than it may seem.  The first case we did (and I will avoid any spoilers) came down to just matching one piece of information with another when it came to the final questions.  However, the second case actually involved not just matching information but using it to infer and deduce other pieces of information.  We missed several answers in both games and those were just the easiest difficulty levels so the game provides plenty of a challenge.
+
+The whole thing takes 15-20 minutes and is incredibly easy to explain to people so this is a good game that appeals to a wide range of gamer types." />
+									<comment username="jens_hoppe" rating="7" value="Fun, somewhat silly party game." />
+									<comment username="ponchocyclist" rating="7" value="" />
+									<comment username="delapra" rating="7" value="" />
+									<comment username="Dormammu" rating="7" value="" />
+									<comment username="Kierkegaard555" rating="7" value="" />
+									<comment username="amikezor" rating="7" value="" />
+									<comment username="dnorthcott" rating="7" value="" />
+									<comment username="isabou" rating="7" value="" />
+									<comment username="DanKD" rating="7" value="" />
+									<comment username="Earl of Dukes" rating="7" value="" />
+									<comment username="Smintie" rating="7" value="this game is hilarious and the artwork is really special. i can see how this might be a game that needs the right group to work well. it is a marriage of the old “telephone game” and a simple logic puzzle, combined to riotous effect. quick playing." />
+									<comment username="Squeezel" rating="7" value="" />
+									<comment username="rubuscube" rating="7" value="" />
+									<comment username="bengkohn" rating="7" value="" />
+									<comment username="dealingtrap" rating="7" value="" />
+									<comment username="Peerchen" rating="7" value="" />
+									<comment username="cbdarden" rating="7" value="" />
+									<comment username="Tr0llet" rating="7" value="" />
+									<comment username="Chabousse" rating="7" value="The &quot;chinese whisper&quot; game, with a famous comic background. Enjoyable and unique filler." />
+									<comment username="Teamjimby" rating="7" value="Such a fun, unique game.  It combines memory and deduction and always seems to result in laughter." />
+									<comment username="ChrB" rating="7" value="Woah this game is unique - and, fortunately, also very good! 
+My family usually loves deduction games (Sleuth being their favorite among some and Hanabi highly rated as well), but many deduction games fall flat. This game takes the deduction genre in a whole new direction by introducing it as a cooperatively game for exactly 4 players in which you must whisper clues in each other&#039;s ears! Once the game is over, you are all asked the same three questions and each player has to come up with the correct answers by deducing and putting together the various pieces of information he/she has gotten during the game!
+
+Each scenario usually takes 10-15 minutes, and the game comes with 64 cases, so the replayability is quite good. Sure, when you have solved a case, you can&#039;t really play it again, but I would argue that you can do so if you play it with a different group once a year has passed - that way only a fourth of the group will vaguely know what&#039;s going on. I&#039;m definitely planning to do so.
+
+The game produces some pretty tense moments, and once you&#039;re done whispering everybody frantically grabs a pencil and write down what they can remember. After our first 9 games, we have only got a perfect score of 12 once... The game has cases of varying difficulty, with some games being extremely tough (we have not had a 0 point game yet, but we have had a 1 point game, and I&#039;m sure we will get a scoreless game sooner or later).
+
+I guess some downsides are the fact that you must be EXACTLY 4 players, and I&#039;ve had situations where 3 players wanted to play and 5 and 6. Also, as every player needs to answer the exact same questions, some people might feel a little dumb if they couldn&#039;t figure something out the other players could. Still, this is a game I&#039;m looking very much forward playing again with my family (and, later, friends)." />
+									<comment username="Sassycat" rating="7" value="Initially I was worried that there wouldn&#039;t be enough to this game, but it&#039;s been a blast every time. It makes perfect filler, but the player restrictions (4 and only 4 players) make it a bit awkward to fit sometimes." />
+									<comment username="pjmmp" rating="7" value="" />
+									<comment username="JackyTheRipper" rating="7" value="" />
+									<comment username="antav" rating="7" value="" />
+									<comment username="cstowl" rating="7" value="" />
+									<comment username="Neuro" rating="7" value="" />
+									<comment username="jalpes" rating="7" value="" />
+									<comment username="ski309" rating="7" value="" />
+									<comment username="xSuperioRx" rating="7" value="" />
+									<comment username="plytho" rating="7" value="" />
+									<comment username="nosywombat" rating="7" value="" />
+									<comment username="jojoplato" rating="7" value="" />
+									<comment username="ArekKowalczyk999" rating="7" value="" />
+									<comment username="malibu_babe_28" rating="7" value="1.4 EUR 29 at Essen 2014" />
+									<comment username="dougadamsau" rating="7" value="A cooperative deduction game set in the Blake &amp; Mortimer universe.  Players play one of the four main characters from the comic series (although I can only recall Labrousse in two of the stories ... SOS Meteors, and the Sarcophagus in the Antarctic one), and work their way through 64 cases.  Each case has one player receiving a quarter of the information necessary to deduce the solution.  Players have to play Chinese Whispers, passing and memorizing information around the table.  After four rounds of this, everyone should know everything, but of course it&#039;s much more difficult than that.  Players each then secretly answer three questions about the case and read out the solution - you get a maximum of 12 points then you&#039;ve won.  
+
+Very difficult to rate - quite unique in feel, and that&#039;s no mean feat these days.  A weird mixture of hilarity as you try and keep instantly disposable factoids in your head, then nut through the questions.  
+
+Very clever - I liked it." />
+									<comment username="Hessu68" rating="7" value="" />
+									<comment username="zastrygon" rating="7" value="" />
+									<comment username="NoppaGames" rating="7" value="Essen 2014" />
+									<comment username="steinhauser" rating="7" value="" />
+									<comment username="pedrotiagosilva" rating="7" value="" />
+									<comment username="Stavros" rating="7" value="3 plays on the prototype in French language. A cooperative game with an original mix of communication (main mechanism), memory and deduction. Difficulty curve in the mysteries. The catch is that it needs exactly 4 players. 10 to 15min. &#039;Blake and Mortimer&#039; theme is spot on. " />
+									<comment username="dexdouglas" rating="7" value="Witness is a game of telephone mixed with a logic puzzle. Everyone has some clues and you take turns whispering them into your neighbors ears. What inevitably happens is someone fucks up something along the way and the person whispering to you has fallen apart laughing. It goes something like this,
+
+-dude leans over and starts whispering in your ear, &quot;the duke was next to the conductors office, the countess didn&#039;t hear anything and the baron was in room...fuck, shit, the baron was in the bathroom? NO the duke was in the bathroom, &#039;the duke was taking a deuce&#039; the Baron was next to the conductor. The countess was in room 2. Or an even numbered room. I forget. Fuck.&quot;
+
+Then we all get asked 3 questions and have to answer them privately. Then we reveal and score points as a group. Max score is 12, we scored 8. It was really fun and I&#039;d love to play it with Ariel and I and another couple. It only plays 4 people." />
+									<comment username="Cheesechick" rating="7" value="Usually I&#039;m pretty good at memory games... I was shocked at just how bad I am at this one! We&#039;re still on the first-level cases and I average about one question right per case. I guess when you&#039;re so focused on just remembering it&#039;s pretty hard to actually think and deduce at the same time. You get time to write down your thoughts and think things through after the fact, but while you&#039;re listening you&#039;re also trying to remember what you heard before and think of ways to combine everything to pass onto the next player. It&#039;s pretty neat, frankly. It&#039;s a fun little mental exercise.
+
+This also, for what it&#039;s worth, might now be my most unique 10 minute game." />
+									<comment username="SteveK2" rating="7" value="Different. Outside my comfort zone, but in a good way (probably).
+
+Chinese Whispers to solve crime cases. This was before the days of simply getting four detectives to talk through their findings.
+
+Two cases played. Two abject failures. " />
+									<comment username="mrdrofficer" rating="6.92" value="" />
+									<comment username="gymclass" rating="6.9" value="" />
+									<comment username="theodoremason" rating="6.9" value="" />
+									<comment username="Immaterial" rating="6.9" value="Different concept and a game hard to developp and publish. Ystari made it very well! Personnaly, I think it&#039;s not always fun to solve problems and to use memory in a game. " />
+									<comment username="vidaldo" rating="6.9" value="" />
+									<comment username="amishburrito" rating="6.9" value="" />
+									<comment username="superdupergeek" rating="6.9" value="Ordered from IGUK on 12/3/15 for £22.49 including shipping
+
+I really like it! Unfortunately my game group would prefer more conventional games so I will probably trade.." />
+									<comment username="RepublicofJosh" rating="6.89" value="" />
+									<comment username="Mxever7" rating="6.8" value="Witness is a really quick and clever &quot;deduction&quot; game.  Also, it has you whispering to your friends, which is great fun in a goofy, thrown-back-to-elementary-school way! But the stories are very uneven: some are tricky, others just aren&#039;t. And it&#039;s not about the supposed difficulty rating: we&#039;ve played red missions where we all knew all the answers without any confusion at all.  The biggest problem is that it&#039;s more of a memory game than a deduction game and for adults a memory test just isn&#039;t all that interesting." />
+									<comment username="Melric" rating="6.8" value="" />
+									<comment username="Aratar" rating="6.8" value="Not really a game, more of a &quot;party game&quot;-like activity. " />
+									<comment username="Abane" rating="6.7" value="" />
+									<comment username="Shnik" rating="6.7" value="" />
+									<comment username="Japara" rating="6.7" value="" />
+									<comment username="PurpleCowPinkSpots" rating="6.7" value="" />
+									<comment username="Rocketboots" rating="6.7" value="" />
+									<comment username="Boltana" rating="6.7" value="" />
+									<comment username="greengrassgrower" rating="6.6" value="" />
+									<comment username="Ganybyte" rating="6.5" value="" />
+									<comment username="bluesheep" rating="6.5" value="I really enjoy to play a case or two at the end of a long gaming session, but the requirement for exactly 4 people can sometimes keep this from getting to the table." />
+									<comment username="MickgorBE" rating="6.5" value="" />
+									<comment username="BobbyTheRookie" rating="6.5" value="" />
+									<comment username="petroleumjelly" rating="6.5" value="" />
+									<comment username="lets get on board" rating="6.5" value="" />
+									<comment username="niluk84" rating="6.5" value="" />
+									<comment username="waitreally" rating="6.5" value="" />
+									<comment username="realnewton" rating="6.5" value="" />
+									<comment username="Sir Benabus" rating="6.5" value="" />
+									<comment username="Candorras" rating="6.5" value="" />
+									<comment username="aivislisovskis" rating="6.5" value="" />
+									<comment username="briankoser" rating="6.5" value="" />
+									<comment username="hyakkihiro" rating="6.5" value="" />
+									<comment username="venasion" rating="6.5" value="A less involved Sherlock Holmes meets telephone. Not bad but frustrating if someone mangles a clue. Like the deduction aspect and that you really have to work at solving the cases. Would play again." />
+									<comment username="CDRPatterson" rating="6.5" value="" />
+									<comment username="migeloo" rating="6.5" value="" />
+									<comment username="andrewblcl" rating="6.5" value="" />
+									<comment username="TheTerror987" rating="6.5" value="" />
+									<comment username="PootJenkins" rating="6.5" value="" />
+									<comment username="JPJeezus" rating="6.5" value="" />
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															</comments>
+	
+	
+   		<statistics page="14">
+								<ratings >
+			<usersrated value="1802" />
+			<average value="7.378" />
+			<bayesaverage value="6.66772" />
+
+			<ranks>
+															<rank type="subtype" id="1" name="boardgame" friendlyname="Board Game Rank" value="654" bayesaverage="6.66772" />
+																				<rank type="family" id="5498" name="partygames" friendlyname="Party Game Rank" value="25" bayesaverage="7.06371" />
+												</ranks>
+
+			<stddev value="1.32093" />
+			<median value="0" />
+			<owned value="3016" />
+			<trading value="58" />
+			<wanting value="411" />
+			<wishing value="1402" />
+			<numcomments value="411" />
+			<numweights value="52" />
+			<averageweight value="1.5" />
+			</ratings>
+								</statistics>
+     
+	
+          
+</item>
+</items>
