@@ -54,6 +54,18 @@ def insert_player(player_name, db_name):
 		conn.close()
 	return select_player_id(player_name, db_name)
 
+def insert_game_players_bulk(game, db_name):
+	logging.info('Inserting all players who rated the game %s', game.name)
+	conn = sqlite3.connect(db_name)
+	cur = conn.cursor()
+	for i in range(1,11):
+		for player_name in game.votes[i]:
+			player_id = select_player_id(player_name, db_name)
+			if player_id==0:
+				cur.execute('insert into player (name) values (?)', (player_name,))
+	conn.commit()
+	conn.close()
+
 # *************************** game-related queries ***************************
 def select_from_game_name(game_name, db_name):
 	conn = sqlite3.connect(db_name)
@@ -86,7 +98,7 @@ def insert_game(game, db_name):
 	conn.close()
 
 # *************************** collection-related queries ***************************
-def insert_rating(player_name, game_id, rating, db_name):
+def insert_game_rating_single(player_name, game_id, rating, db_name):
 	logging.info('Inserting rating %s from %s for the game_id "%s"', rating, player_name, game_id)
 	player_id = insert_player(player_name, db_name)
 	conn = sqlite3.connect(db_name)
@@ -95,3 +107,22 @@ def insert_rating(player_name, game_id, rating, db_name):
 	conn.commit()
 	conn.close()
 
+def insert_game_rating_bulk(game, db_name):
+	logging.info('Inserting bulk rating for the game "%s"', game.name)
+	conn = sqlite3.connect(db_name)
+	cur = conn.cursor()
+	game_id = select_from_bgg_game_id(game.bgg_game_id, db_name)[0]
+	for i in range(1,11):
+		for player_name in game.votes[i]:
+			player_id = select_player_id(player_name, db_name)
+			cur.execute('select player_id, game_id from collection where player_id=? and game_id=?', (player_id, game_id))
+			row = cur.fetchone()
+			if row==None:
+				logging.info('Inserting rating %s for the game "%s", player %s', i, game.name, player_name)
+				cur.execute('insert into collection (player_id, game_id, rating) values (?, ?, ?)', (player_id, game_id, i))
+	conn.commit()
+	conn.close()
+
+def insert_game_players_ratings(game, db_name):
+	insert_game_players_bulk(game, db_name)
+	insert_game_rating_bulk(game, db_name)
