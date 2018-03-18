@@ -4,6 +4,7 @@ import time
 
 import bgg_requests as bgg
 import xml_parser_game
+import xml_parser_collection
 from Game import Game
 import bgg_db
 
@@ -58,6 +59,12 @@ def pickle_game_to_db(game_pickle_file, db_name):
 		bgg_db.insert_game(game, db_name)
 		bgg_db.insert_game_players_ratings(game, db_name)
 
+def insert_collection(player_name, db_name):
+	#xml_file = bgg.get_collection_from_bgg(player_name)
+	#pickle_file = xml_parser_collection.collection_parser(xml_file)
+	pickle_file = 'collection_matthldn.dat'
+	bgg_db.insert_collection(pickle_file, db_name)
+
 def main():
 #game_id = 206859 #Iberian rails
 #game_id = 126163 #Tzolk'in
@@ -68,7 +75,8 @@ def main():
 #	game_pickle_file = get_game_info_inc_ratings(206859) #'game_164265.dat'
 #	pickle_game_to_db(game_pickle_file, db_name)
 
-
+	player_name = 'matthldn'
+	insert_collection(player_name, db_name)
 
 if __name__ == '__main__':
 	main()

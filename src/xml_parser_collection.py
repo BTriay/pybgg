@@ -3,8 +3,8 @@ import pickle
 import bgg_requests
 
 class CollectionGame():
-	def __init__(self, game_id):
-		self.game_id = game_id
+	def __init__(self, bgg_game_id):
+		self.bgg_game_id = bgg_game_id
 		self.name = ''
 		self.rating = ''	
 
@@ -15,10 +15,10 @@ class CollectionGame():
 		self.rating = rating
 
 	def display(self):
-		print('Game: {}\nGame id: {}\nRating: {}\n'.format(self.name, self.game_id, self.rating))
+		print('Game: {}\nGame id: {}\nRating: {}\n'.format(self.name, self.bgg_game_id, self.rating))
 
-def collection_parser(coll_file_name):
-	tree = ET.parse(coll_file_name)
+def collection_parser(file_name):
+	tree = ET.parse(file_name)
 	root = tree.getroot()
 	game_list = list()
 	for it in root:
@@ -28,10 +28,10 @@ def collection_parser(coll_file_name):
 			g.add_name(el.text)
 		for el in it.iter('rating'):
 			g.add_rating(el.attrib['value'])
-	return game_list
 
-coll_template = 'coll_template.xml'
-game_list = collection_parser(coll_template)
+	player_name = file_name.split('collection_')[1].split('.xml')[0]
+	pickle_file = 'collection_' + str(player_name) + '.dat'
+	with open(pickle_file, 'wb') as f:
+		pickle.dump(game_list, f)
 
-for it in game_list:
-	it.display()
+	return pickle_file

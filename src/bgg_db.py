@@ -83,35 +83,44 @@ def select_from_bgg_game_id(bgg_game_id, db_name):
 	conn.close()
 	return row
 
-def insert_game(game, db_name):
-	name_count = select_from_game_name(game.name, db_name)
-	id_count = select_from_bgg_game_id(game.bgg_game_id, db_name)
+def insert_game(game_name, bgg_game_id, db_name):
+	name_count = select_from_game_name(game_name, db_name)
+	id_count = select_from_bgg_game_id(bgg_game_id, db_name)
 	if (name_count!=None) | (id_count!=None):
-		logging.info('Game %s or game_id %s already in the DB', game.name, game.bgg_game_id)
+		logging.info('Game %s or game_id %s already in the DB', game_name, bgg_game_id)
 		return
 
 	conn = sqlite3.connect(db_name)
 	cur = conn.cursor()
-	logging.info('Inserting the game %s', game.name)
-	cur.execute('insert into game (bgg_game_id, name) values (?,?)', (game.bgg_game_id, game.name))
+	logging.info('Inserting the game %s', game_name)
+	cur.execute('insert into game (bgg_game_id, name) values (?,?)', (bgg_game_id, game_name))
 	conn.commit()
 	conn.close()
 
 # *************************** collection-related queries ***************************
-def insert_game_rating_single(player_name, game_id, rating, db_name):
-	logging.info('Inserting rating %s from %s for the game_id "%s"', rating, player_name, game_id)
-	player_id = insert_player(player_name, db_name)
+def insert_game_rating_single(player_id, game_id, rating, db_name):
+	if rating=='N/A':
+		rating=-1
+	logging.info('Inserting rating %s from %s for the game_id %s', rating, player_id, game_id)
+
 	conn = sqlite3.connect(db_name)
 	cur = conn.cursor()
-	cur.execute('insert into collection (player_id, game_id, rating) values (?, ?, ?)', (player_id, game_id, rating))
+	cur.execute('select player_id, game_id from collection where player_id=? and game_id=?', (player_id, game_id))
+	row = cur.fetchone()
+
+	if row==None:
+		cur.execute('insert into collection (player_id, game_id, rating) values (?, ?, ?)', (player_id, game_id, rating))
+
 	conn.commit()
 	conn.close()
 
 def insert_game_rating_bulk(game, db_name):
 	logging.info('Inserting bulk rating for the game "%s"', game.name)
+
 	conn = sqlite3.connect(db_name)
 	cur = conn.cursor()
 	game_id = select_from_bgg_game_id(game.bgg_game_id, db_name)[0]
+
 	for i in range(1,11):
 		for player_name in game.votes[i]:
 			player_id = select_player_id(player_name, db_name)
@@ -120,9 +129,24 @@ def insert_game_rating_bulk(game, db_name):
 			if row==None:
 				logging.info('Inserting rating %s for the game "%s", player %s', i, game.name, player_name)
 				cur.execute('insert into collection (player_id, game_id, rating) values (?, ?, ?)', (player_id, game_id, i))
+
 	conn.commit()
 	conn.close()
 
 def insert_game_players_ratings(game, db_name):
 	insert_game_players_bulk(game, db_name)
 	insert_game_rating_bulk(game, db_name)
+
+def insert_collection(pickle_collection_file, db_name):
+	import pdb; pdb.set_trace()
+	player_name = pickle_collection_file.split('collection_')[1].split('.dat')[0]
+	player_id = insert_player(player_name, db_name)
+
+	with open(pickle_collection_file, 'rb') as f:
+		data = pickle.Unpickler(f)
+		collection_list = data.load()
+
+		for game in collection_list:
+			insert_game(game.name, game.bgg_game_id, db_name)
+			game_id = select_from_game_name(game.name, db_name)[0]
+			insert_game_rating_single(player_id, game_id, game.rating, db_name)
